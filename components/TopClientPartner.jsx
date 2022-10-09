@@ -7,7 +7,7 @@ const TopClientPartner = ({ imgArry, className }) => {
       <div className="img-container">
         {imgArry.map((img, index) => (
           <li key={index}>
-            <img src={`${img}`} />
+            <img src={`${img}`} className="img-resize" />
           </li>
         ))}
       </div>

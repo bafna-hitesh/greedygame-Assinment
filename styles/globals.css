@@ -247,7 +247,7 @@ h1 {
 /* feedback-sec */
 .feedback-sec {
   width: 100vw;
-  height: 493px;
+  /* height: 493px; */
   padding: 60px 0 0 100px;
   background: #ffffff url("../public/IconQuote.png") 32px 40px no-repeat
     padding-box;
@@ -259,7 +259,7 @@ h1 {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 30px #41414115;
   border-radius: 10px;
-  margin-top: 40px;
+  margin: 40px 0;
   padding: 40px 0 0 40px;
 }
 .feedback-card-img {
@@ -276,37 +276,39 @@ h1 {
 }
 .feedback-card-para {
   width: 570px;
-  height: 45px;
+  /* height: 45px; */
   text-align: left;
   font: normal normal normal 16px/26px Lato;
   letter-spacing: 0px;
   color: #435366;
+  margin-bottom: 2rem;
 }
 .read-text {
   text-align: left;
   font: normal normal 600 19px/29px Lato;
   letter-spacing: 0px;
   color: #126fed;
+  /* margin: 1rem; */
 }
 /* contact-container */
 .contact-container {
   width: 100vw;
-  height: 297px;
+  /* height: 297px; */
   background: #1a1a1a 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
-  padding: 60px 0 0 100px;
+  padding: 60px 100px;
   font: normal normal bold 33px/50px Lato;
   letter-spacing: 0px;
   color: #ffffff;
 }
 .contact-title {
   width: 767px;
-  height: 54px;
+  /* height: 54px; */
   text-align: left;
-  font: normal normal bold 33px/50px Lato;
+  font: normal normal bold 33px Lato;
   letter-spacing: 0px;
   color: #ffffff;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 .demo {
   display: inline-flex;
@@ -341,26 +343,26 @@ h1 {
 .footer-fix {
   display: none;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 36px #00000029;
   padding: 26px 67px;
   bottom: 0;
-  text-align: left;
+  text-align: center;
   font: normal normal 600 16px/20px Lato;
   letter-spacing: 0px;
   color: #1d1a1a;
 }
 .footer-fix-btn {
   /* UI Properties */
-  padding: 10px 30px;
+  /* padding: 10px 30px; */
   background: #126fed 0% 0% no-repeat padding-box;
   border-radius: 6px;
-  text-align: center;
+  /* text-align: center; */
   font: normal normal bold 19px Lato;
   letter-spacing: 0px;
   color: #ffffff;
-  margin-inline-start: 5px;
+  /* margin-inline-start: 5px; */
   border: none;
 }
 .footer-fix-btn:hover {
@@ -373,6 +375,7 @@ h1 {
     display: flex;
     align-items: center;
   } */
+
   .nav-img {
     padding: 5px;
     justify-content: unset;
@@ -400,6 +403,7 @@ h1 {
   .hero-section {
     flex-direction: column;
     padding: 60px 20px;
+    align-items: center;
   }
   .hero-container {
     width: 100%;
@@ -420,7 +424,7 @@ h1 {
     margin-inline-end: 0;
   }
   .hero-info-box {
-    padding: 19px 104px;
+    padding: 14px;
   }
   .form-container {
     position: unset;
@@ -441,13 +445,17 @@ h1 {
   .middle-section {
     display: flex;
     justify-content: center;
+    padding: 20px;
   }
   .data-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 40px;
     align-items: center;
     place-items: center;
+  }
+  .data-box {
+    margin: 0;
   }
   .data-subtitle {
     font-weight: 500;
@@ -456,10 +464,16 @@ h1 {
   .top-client-sec,
   .feedback-sec,
   .contact-container {
-    padding: 60px 20px;
+    padding: 60px 20px 40px 20px;
   }
   .img-container {
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .img-resize {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
   }
   .feedback-card {
     padding-bottom: 1rem;
@@ -469,9 +483,7 @@ h1 {
   .feedback-card-para {
     width: 100%;
   }
-  .feedback-card-para {
-    margin-bottom: 2.5rem;
-  }
+
   .read-text {
     margin-top: 25px;
   }
@@ -483,7 +495,7 @@ h1 {
     font-size: 1.8rem;
   }
   .contact-para {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
   }
   .text-underline {
     max-width: 170px;
@@ -494,7 +506,20 @@ h1 {
     justify-content: center;
     margin: 20px 0 90px 0;
   }
+  .footer-text {
+    margin-bottom: 2rem;
+    padding: 20px;
+  }
   .footer-fix {
     display: block;
+    padding: 20px 20px 40px 20px;
+    left: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .footer-fix-btn {
+    margin: auto;
+    padding: 10px 20px;
   }
 }
